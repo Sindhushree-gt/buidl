@@ -1,10 +1,14 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import LogoSection from '@/components/LogoSection';
+import Mission from '@/components/Mission';
 import About from '@/components/About';
 import ProgramStructure from '@/components/ProgramStructure';
+import EventsSection from '@/components/EventsSection';
 import WhoShouldApply from '@/components/WhoShouldApply';
 import SelectionProcess from '@/components/SelectionProcess';
 import Ecosystem from '@/components/Ecosystem';
+import BuilderDinner from '@/components/BuilderDinner';
 import Contact from '@/components/Contact';
 import WaitlistSection from '@/components/WaitlistSection';
 import Footer from '@/components/Footer';
@@ -16,11 +20,15 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <About />
+      <LogoSection />
+      <Mission />
       <ProgramStructure />
+      <About />
+      <EventsSection />
       <WhoShouldApply />
       <SelectionProcess />
       <Ecosystem />
+      <BuilderDinner />
       
       {/* Final CTA Section */}
       <section className="py-32 container mx-auto px-6">

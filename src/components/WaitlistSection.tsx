@@ -56,7 +56,7 @@ const WaitlistSection = () => {
               
               <div className="space-y-4 mb-8">
                 <p className="text-white/60">
-                  Join the <span className="text-white font-bold">BUIDL3</span> waitlist to get early access to:
+                  Join the <span className="text-white font-bold">BUIDL</span> waitlist to get early access to:
                 </p>
                 <ul className="space-y-3">
                   {[
@@ -150,10 +150,19 @@ const WaitlistSection = () => {
                   <motion.div 
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: 'auto' }}
-                    className="text-center mt-6"
+                    className="text-center mt-6 space-y-4"
                   >
-                    <p className="text-green-400 font-bold">
-                      You're on the list! We'll be in touch soon.
+                    <div>
+                      <p className="text-green-400 font-black text-2xl uppercase tracking-tighter">You're in.</p>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-white/40 text-[10px] font-bold uppercase tracking-widest">Next step:</p>
+                      <p className="text-white/80 text-sm font-medium">
+                        Watch your inbox + join Telegram (link coming).
+                      </p>
+                    </div>
+                    <p className="text-primary/60 text-xs font-bold italic">
+                      Builders who move fast get priority access
                     </p>
                   </motion.div>
                 )}

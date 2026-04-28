@@ -33,7 +33,7 @@ const Navbar = () => {
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
                 <Link href="/" className="text-2xl font-black tracking-tighter">
-                    BUIDL3
+                    BUIDL
                 </Link>
 
                 {/* Desktop Nav */}

@@ -2,78 +2,113 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Repeat, GraduationCap, Ship, Lightbulb } from 'lucide-react';
+import { CheckCircle2, Unlock, Terminal, ShieldCheck, Code2, Github, Timer, Rocket, Presentation, Users, Coins } from 'lucide-react';
 
 const WhoShouldApply = () => {
-    const audience = [
-        {
-            icon: Code,
-            title: "Web3 Newcomers",
-            desc: "Talented developers ready to dive into the Ethereum stack and decentralized protocols."
-        },
-        {
-            icon: Repeat,
-            title: "Web2 Engineers",
-            desc: "Experienced senior engineers transitioning their skills from centralized to decentralized systems."
-        },
-        {
-            icon: GraduationCap,
-            title: "Curious Students",
-            desc: "High-potential students exploring the frontier of Web3 and looking for a serious path."
-        },
-        {
-            icon: Ship,
-            title: "Active Builders",
-            desc: "Developers currently shipping products who want to accelerate their growth and network."
-        },
-        {
-            icon: Lightbulb,
-            title: "Early Founders",
-            desc: "Founders at the idea or MVP stage looking for a technical co-founder or initial validation."
-        }
-    ];
-
     return (
-        <section id="who" className="py-32 relative">
+        <section id="who" className="py-32 relative bg-black">
             <div className="container mx-auto px-6">
-                <div className="text-center mb-20">
-                    <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tighter uppercase">Who This <span className="gradient-text">Is For</span></h2>
-                    <p className="text-white/60 max-w-2xl mx-auto text-xl leading-relaxed">
-                        We are looking for high-intent individuals ready to commit to the Ethereum ecosystem.
-                    </p>
-                </div>
-
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {audience.map((item, i) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
+                <div className="max-w-4xl mx-auto">
+                    {/* Header */}
+                    <div className="mb-20">
+                        <motion.h2 
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: i * 0.1 }}
-                            className="glass-card p-10 hover:border-secondary/50 transition-all group bg-white/[0.01]"
+                            className="text-7xl md:text-9xl font-black mb-6 tracking-tighter uppercase gradient-text inline-block"
                         >
-                            <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center mb-8 group-hover:bg-secondary/20 transition-all group-hover:rotate-6">
-                                <item.icon className="w-8 h-8 text-secondary" />
-                            </div>
-                            <h3 className="text-2xl font-black mb-4 tracking-tight uppercase">{item.title}</h3>
-                            <p className="text-white/50 text-sm leading-relaxed">{item.desc}</p>
-                        </motion.div>
-                    ))}
-                    
-                    {/* Final Card CTA Style */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.5 }}
-                        className="glass-card p-10 flex flex-col justify-center border-dashed border-white/20 bg-transparent text-center"
-                    >
-                        <h3 className="text-2xl font-black mb-4 tracking-tight uppercase text-white/30">You?</h3>
-                        <p className="text-white/20 text-sm leading-relaxed italic">
-                            If you have the drive to buidl, we want to see your application.
+                            Apply
+                        </motion.h2>
+                        <p className="text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-8">
+                            Not for everyone.
                         </p>
-                    </motion.div>
+                        <p className="text-xl md:text-2xl text-white/60 font-medium leading-relaxed max-w-2xl">
+                            BUIDL selects the top 5% of builders willing to ship on Ethereum during Devcon.
+                        </p>
+                    </div>
+
+                    {/* Pillars */}
+                    <div className="grid md:grid-cols-3 gap-8 mb-24">
+                        {[
+                            { title: "No learning.", desc: "This is not a course." },
+                            { title: "No spectators.", desc: "This is not a conference." },
+                            { title: "Only builders.", desc: "This is a pipeline." }
+                        ].map((item, i) => (
+                            <div key={i} className="border-l-2 border-primary pl-6 py-2">
+                                <h3 className="text-2xl font-black uppercase tracking-tighter text-white mb-2">{item.title}</h3>
+                                <p className="text-white/40 text-sm font-bold uppercase tracking-widest">{item.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Split Sections */}
+                    <div className="grid lg:grid-cols-2 gap-16">
+                        {/* Minimum Bar */}
+                        <div className="space-y-10">
+                            <div className="flex items-center gap-4">
+                                <Terminal className="w-8 h-8 text-secondary" />
+                                <h3 className="text-3xl font-black uppercase tracking-tighter">Minimum Bar</h3>
+                            </div>
+                            
+                            <ul className="space-y-6">
+                                {[
+                                    { icon: Timer, text: "1+ year building" },
+                                    { icon: Code2, text: "Solidity / Rust basics" },
+                                    { icon: Github, text: "Active GitHub (real commits)" },
+                                    { icon: ShieldCheck, text: "Full-time commitment" }
+                                ].map((item, i) => (
+                                    <motion.li 
+                                        key={i}
+                                        initial={{ opacity: 0, x: -20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ delay: i * 0.1 }}
+                                        className="flex items-center gap-4 text-white/80"
+                                    >
+                                        <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                            <item.icon className="w-5 h-5 text-secondary" />
+                                        </div>
+                                        <span className="text-xl font-bold tracking-tight">{item.text}</span>
+                                    </motion.li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* If Selected */}
+                        <div className="space-y-10">
+                            <div className="flex items-center gap-4">
+                                <Unlock className="w-8 h-8 text-primary" />
+                                <h3 className="text-3xl font-black uppercase tracking-tighter">If Selected</h3>
+                            </div>
+
+                            <div className="glass-card p-8 border-primary/20 relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-3xl"></div>
+                                <p className="text-primary font-black uppercase tracking-widest text-sm mb-8">You enter the pipeline:</p>
+                                
+                                <ul className="space-y-6">
+                                    {[
+                                        { icon: Rocket, text: "Build & deploy on Ethereum" },
+                                        { icon: Users, text: "Make it to the top 20" },
+                                        { icon: Coins, text: "Join a private Devcon builder dinner" },
+                                        { icon: Presentation, text: "Showcase what you shipped" },
+                                        { icon: ShieldCheck, text: "Get ecosystem exposure + funding pathways" }
+                                    ].map((item, i) => (
+                                        <motion.li 
+                                            key={i}
+                                            initial={{ opacity: 0, y: 10 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            viewport={{ once: true }}
+                                            transition={{ delay: i * 0.1 }}
+                                            className="flex items-start gap-4 text-white/70"
+                                        >
+                                            <CheckCircle2 className="w-5 h-5 text-primary mt-1 shrink-0" />
+                                            <span className="text-sm font-medium leading-relaxed">{item.text}</span>
+                                        </motion.li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

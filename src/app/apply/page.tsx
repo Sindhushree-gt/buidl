@@ -44,7 +44,7 @@ export default function ApplyPage() {
             </div>
             <h2 className="text-4xl font-black mb-4 tracking-tighter uppercase">Application Sent!</h2>
             <p className="text-white/60 mb-8 text-lg">
-              Thanks for applying for BUIDL3 @ Devcon. We'll review your profile and get back to you soon.
+              Thanks for applying for BUIDL @ Devcon. We'll review your profile and get back to you soon.
             </p>
             <Link 
               href="/"
@@ -69,7 +69,7 @@ export default function ApplyPage() {
             className="text-center mb-12"
           >
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Apply for <span className="gradient-text">BUIDL3</span>
+              Apply for <span className="gradient-text">BUIDL</span>
             </h1>
             <p className="text-white/50 text-xl font-medium">
               Join the Ethereum-native builder pipeline.
@@ -142,7 +142,7 @@ export default function ApplyPage() {
                 value={formData.whyJoin}
                 onChange={handleChange}
                 rows={5}
-                placeholder="What are your goals for BUIDL3 @ Devcon?"
+                placeholder="What are your goals for BUIDL @ Devcon?"
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 focus:border-primary outline-none transition-all resize-none"
               />
             </div>

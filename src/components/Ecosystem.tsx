@@ -24,16 +24,23 @@ const Ecosystem = () => {
                     
                     <div className="relative z-10">
                         <div className="text-center mb-16">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Ecosystem Partners</h2>
-                            <p className="text-white/50">Collaborating with the best communities in the space.</p>
+                            <h2 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter uppercase">Our Ecosystem</h2>
+                            <p className="text-white/60 font-bold">Built with the Ethereum community</p>
                         </div>
                         
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center opacity-60">
-                            {partners.map((partner, i) => (
-                                <div key={i} className="text-sm font-black tracking-widest uppercase text-center hover:text-white hover:opacity-100 transition-all cursor-default">
-                                    {partner}
+                        <div className="flex flex-col items-center gap-12">
+                            <p className="text-sm font-black uppercase tracking-[0.3em] text-white/30">Supported by:</p>
+                            <div className="flex flex-wrap justify-center gap-x-16 gap-y-8">
+                                <div className="text-xl md:text-3xl font-black tracking-tight text-center hover:text-primary transition-all cursor-default flex items-center gap-3">
+                                    Cypherpunk.space
                                 </div>
-                            ))}
+                                <div className="text-xl md:text-2xl font-black tracking-tight text-center hover:text-primary transition-all cursor-default flex items-center gap-3">
+                                    CryptoMondays 🇮🇳 India
+                                </div>
+                                <div className="text-xl md:text-2xl font-black tracking-tight text-center hover:text-secondary transition-all cursor-default flex items-center gap-3">
+                                    Cypherpunk. India 🇮🇳
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

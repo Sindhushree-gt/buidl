@@ -50,10 +50,17 @@ const Footer = () => {
                 </div>
                 
                 <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-                    <p className="text-white/30 text-sm">
+                    <p className="text-white/30 text-xs">
                         © 2026 BUIDL FOUNDATION. ALL RIGHTS RESERVED.
                     </p>
-                    <p className="text-white/30 text-sm flex items-center gap-2">
+                    <div className="flex items-center gap-4 text-[10px] font-black uppercase tracking-widest text-white/20">
+                        <span>Built with:</span>
+                        <span className="text-white/40">Next.js</span>
+                        <span className="text-white/40">React</span>
+                        <span className="text-white/40">Tailwind</span>
+                        <span className="text-white/40">Framer Motion</span>
+                    </div>
+                    <p className="text-white/30 text-xs flex items-center gap-2">
                         BUIDL with ❤️ for the <span className="text-primary font-bold">Ethereum Ecosystem</span>
                     </p>
                 </div>
