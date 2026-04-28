@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Shield, Filter, Loader2, RefreshCw, Search, Calendar, ChevronDown, Phone, Mail, Github, Compass, Linkedin, Globe, ExternalLink, X, CheckCircle, XCircle, Clock, User, Tag, Zap } from 'lucide-react';
-import Navbar from '@/components/Navbar';
+import { Shield, Filter, Loader2, RefreshCw, Search, Calendar, ChevronDown, Phone, Mail, Github, Compass, Linkedin, Globe, ExternalLink, X, CheckCircle, XCircle, Clock, User, Tag, Zap, Home } from 'lucide-react';
+import Link from 'next/link';
 
 interface Application {
   id: number;
@@ -98,8 +98,15 @@ const AdminPage = () => {
   };
 
   return (
-    <main className="min-h-screen pt-32 pb-24 bg-background">
-      <Navbar />
+    <main className="min-h-screen pt-12 pb-24 bg-background">
+      <div className="container mx-auto px-6 mb-8">
+          <Link 
+            href="/"
+            className="inline-flex items-center gap-2 text-white/40 hover:text-primary transition-colors text-sm font-bold uppercase tracking-widest"
+          >
+            <Home className="w-4 h-4" /> Back to Home
+          </Link>
+      </div>
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-12">

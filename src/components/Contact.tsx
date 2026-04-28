@@ -24,19 +24,19 @@ const Contact = () => {
 
           {/* Phone */}
           <a 
-            href="tel:+91XXXXXXXXXX" 
+            href="tel:+910000000000" // REPLACE WITH ACTUAL PHONE NUMBER
             className="glass-card p-8 group hover:border-secondary/50 transition-all transform hover:-translate-y-2"
           >
             <div className="w-16 h-16 bg-secondary/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
               <Phone className="w-8 h-8 text-secondary" />
             </div>
             <h3 className="text-xl font-bold mb-2">Call Us</h3>
-            <p className="text-white/50 text-sm">+91 XXXXXXXXXX</p>
+            <p className="text-white/50 text-sm">Contact Support</p>
           </a>
 
           {/* WhatsApp */}
           <a 
-            href="https://wa.me/91XXXXXXXXXX" 
+            href="https://wa.me/910000000000" // REPLACE WITH ACTUAL WHATSAPP NUMBER (Including country code, no +)
             target="_blank"
             rel="noopener noreferrer"
             className="glass-card p-8 group hover:border-accent/50 transition-all transform hover:-translate-y-2"

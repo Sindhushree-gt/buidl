@@ -4,6 +4,7 @@ import LogoSection from '@/components/LogoSection';
 import Mission from '@/components/Mission';
 import About from '@/components/About';
 import ProgramStructure from '@/components/ProgramStructure';
+import GoldenTicketSection from '@/components/GoldenTicketSection';
 import EventsSection from '@/components/EventsSection';
 import WhoShouldApply from '@/components/WhoShouldApply';
 import SelectionProcess from '@/components/SelectionProcess';
@@ -24,6 +25,7 @@ export default function Home() {
       <Mission />
       <ProgramStructure />
       <About />
+      <GoldenTicketSection />
       <EventsSection />
       <WhoShouldApply />
       <SelectionProcess />
