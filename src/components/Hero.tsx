@@ -34,28 +34,26 @@ const Hero = () => {
                             <span>BUIDLING AT DEVCON SEA</span>
                         </div>
                         
-                        <h1 className="text-6xl md:text-8xl font-black tracking-tight mb-4 leading-tight drop-shadow-2xl">
-                            BUIDL3 @ <span className="gradient-text">Devcon</span>
+                        <h1 className="text-6xl md:text-8xl font-black tracking-tight mb-8 leading-tight drop-shadow-2xl">
+                            Ship on <span className="gradient-text">Ethereum.</span> <br />
+                            Earn your place at Devcon.
                         </h1>
                         
-                        <div className="flex flex-col gap-2 mb-8">
-                            <p className="text-2xl md:text-3xl text-primary font-black tracking-tighter uppercase">
-                                The Ethereum-native builder pipeline.
-                            </p>
-                            <p className="text-xl md:text-2xl text-white/80 font-bold">
-                                Learn. BUIDL. Ship. Get funded.
+                        <div className="flex flex-col gap-2 mb-10">
+                            <p className="text-xl md:text-3xl text-primary font-black tracking-tighter uppercase">
+                                From 1,000+ developers → 20 high-signal buidlers → live onchain projects
                             </p>
                         </div>
                         
-                        <div className="max-w-2xl mx-auto mb-12 space-y-6">
-                            <p className="text-lg md:text-xl text-white/70 leading-relaxed">
-                                A 3-week high-intensity program designed for developers and founders building real products before Devcon.
+                        <div className="max-w-3xl mx-auto mb-12">
+                            <p className="text-lg md:text-xl text-white/70 leading-relaxed font-medium">
+                                Pre-Devcon sprints, university activations, and a final Ethereum hacker house producing real <span className="text-white font-bold">GitHub output</span> for the ecosystem.
                             </p>
-                            <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm font-black uppercase tracking-widest text-secondary">
-                                <span>• Not a course. Not a hackathon.</span>
-                                <span>• A serious pipeline into the Ethereum ecosystem.</span>
-                            </div>
                         </div>
+                        
+                        <p className="text-xl md:text-2xl text-white mb-10 max-w-2xl mx-auto leading-relaxed font-black drop-shadow-lg uppercase tracking-tight">
+                            Apply. Get selected. Ship onchain.
+                        </p>
                         
                         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
                             <Link 
